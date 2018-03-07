@@ -47,6 +47,13 @@ ans = Calculator_Classes.new num1.to_i, num2.to_i, op
 case op
 	when "+"
 	 	ans.Additon 
+	when "*"
+	 	ans.Multiplication 
+	when "/"
+	 	ans.Division
+	when "-"
+	 	ans.Subtraction   	
+
 	else
 		puts "not working"
 end

@@ -40,15 +40,15 @@ class Calculator_Classes
 	end
 
 	def Multiplication
-		num1 * num2
+		puts num1 * num2
 	end 
 
 	def Division
-		num1 / num2
+		puts num1 / num2
 	end
 
 	def Subtraction
-		num1 - num2
+		puts num1 - num2
 	end
 	
 
