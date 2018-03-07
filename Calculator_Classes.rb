@@ -50,6 +50,18 @@ class Calculator_Classes
 	def Subtraction
 		puts num1 - num2
 	end
-	
-
 end
+
+class Adv_Calc < Calculator_Classes
+	def power
+		puts num1 ** num2
+	end
+
+	def sqrt
+		puts Math.sqrt(num1)
+	end
+end
+
+
+
+

@@ -37,25 +37,45 @@ num1 = gets.chomp
 puts "Please enter your operator: "
 op = gets.chomp
 
+
+
 puts "Please enter your second number: "
 num2 = gets.chomp
 
 # puts calc_Type.upcase!, num1, op, num2
 
-ans = Calculator_Classes.new num1.to_i, num2.to_i, op
+ans = Adv_Calc.new num1.to_i, num2.to_i, op
 
-case op
-	when "+"
-	 	ans.Additon 
-	when "*"
-	 	ans.Multiplication 
-	when "/"
-	 	ans.Division
-	when "-"
-	 	ans.Subtraction   	
+calc_Type = calc_Type.downcase!
 
-	else
-		puts "not working"
+case calc_Type
+	when "b"
+		case op
+			when "+"
+			 	ans.Additon 
+			when "*"
+			 	ans.Multiplication 
+			when "/"
+			 	ans.Division
+			when "-"
+			 	ans.Subtraction  
+		end 	
+
+	when "a"
+		case op
+			when "+"
+			 	ans.Additon 
+			when "*"
+			 	ans.Multiplication 
+			when "/"
+			 	ans.Division
+			when "-"
+			 	ans.Subtraction
+			when "**"
+			 	ans.power 
+			when "sqrt"
+			 	ans.sqrt
+		end 
 end
 
 
