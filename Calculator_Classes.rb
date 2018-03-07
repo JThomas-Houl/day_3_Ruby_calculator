@@ -29,14 +29,14 @@
 class Calculator_Classes
 	attr_accessor :num1, :num2, :op
 
-	def initialize num1, num2 
+	def initialize num1, num2, op 
 		self.num1 = num1
 		self.num2 = num2
 		self.op = op
 	end 
 
 	def Additon
-		num1 + num2
+		puts num1 + num2
 	end
 
 	def Multiplication
